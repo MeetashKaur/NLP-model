@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Tweet APP</title>
+</head>
+<body>
+	<div class="log">
+	<h1> Classify tweet into offensive(0) and non-offensive(1) category</h1>
+	<form action="{{url_fpr{'predict}}}"method="post">
+	<input type="text" name="tweet" placeholder="tweet" required="required"/>
+	<button type="submit" class=" btn btn-primary btn-block btn-large"> Predict</button>
+	</form>
+<br>
+<br>
+{{prediction_test}}
+</div>
+
+</body>
+</html>
